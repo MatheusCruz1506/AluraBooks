@@ -1,0 +1,57 @@
+@import url("/styles/header.css");
+@import url("/styles/banner.css");
+@import url("/styles/carousel.css");
+@import url("/styles/card.css");
+@import url("/styles/topicos.css");
+@import url("/styles/contato.css");
+@import url("/styles/footer.css");
+
+/* 1. Remove o cursor de texto de TODOS os elementos */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  caret-color: transparent; /* Torna o cursor invisível */
+  user-select: none; /* Impede a seleção de texto na maioria dos elementos */
+  -webkit-user-select: none; /* Para Chrome, Safari, Edge */
+  -moz-user-select: none; /* Para Firefox */
+  -ms-user-select: none; /* Para Internet Explorer */
+}
+
+/* 2. Permite o cursor e a seleção de texto nos campos de input e textarea */
+input,
+textarea {
+  caret-color: initial; /* Restaura a cor padrão do cursor */
+  user-select: auto; /* Permite a seleção de texto novamente */
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+}
+
+:root {
+  --cor-cinza: #858585;
+  --cor-cinza-escuro: #474646;
+  --cor-background: #ebecee;
+  --cor-branca: #ffffff;
+  --laranja: #eb9b00;
+  --preto: #000000;
+  --preto-transparente: rgba(0, 0, 0, 0.85);
+  --azul: #002f52;
+  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+
+  --font: "Poppins", sans-serif;
+  --font-secundaria: "Josefin Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* para o "em" e "rem" ex: 1rem ou 1em = 10px */
+}
+
+body {
+  background-color: var(--cor-background);
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
