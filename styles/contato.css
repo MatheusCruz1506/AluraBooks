@@ -30,7 +30,7 @@
   /* Essa linha mantém a borda real transparente */
   border: 1px solid transparent;
   /* Essa ordem é importante! */
-  background: url(/assets/Email.svg) no-repeat 1.8rem center,
+  background: url(./assets/Email.svg) no-repeat 1.8rem center,
     linear-gradient(white, white) padding-box, var(--azul-degrade) border-box;
   background-size: 20px 20px, 100% 100%, 100% 100%;
   box-sizing: border-box;
