@@ -1,0 +1,72 @@
+.contato {
+  background-color: var(--cor-branca);
+  padding: 2.4rem;
+}
+
+.contato__sutitle {
+  font-size: 18;
+  font-weight: 500;
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.contato__text {
+  font-weight: 300;
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0.8rem 0 2.3rem 0;
+}
+
+.contato__cadastro {
+  width: 100%;
+  padding: 1.2rem 1.2rem 1.2rem 4.8rem;
+  border-radius: 24px;
+  /* Essa linha mantém a borda real transparente */
+  border: 1px solid transparent;
+  /* Essa ordem é importante! */
+  background: url("../assets/Email.svg") no-repeat 1.8rem center,
+    linear-gradient(white, white) padding-box, var(--azul-degrade) border-box;
+  background-size: 20px 20px, 100% 100%, 100% 100%;
+  box-sizing: border-box;
+  color: var(--azul);
+}
+
+.contato__cadastro::placeholder {
+  color: var(--azul);
+  font-family: var(--font);
+}
+
+@media (min-width: 1024px) {
+  .contato {
+    display: flex;
+    padding: 3rem 15rem 5.3rem 15rem;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .contato__sutitle {
+    font-size: 24px;
+  }
+
+  .contato__cadastro {
+    width: 50%;
+    height: 0;
+    padding: 2rem 5rem;
+  }
+}
+
+@media (min-width: 1728px) {
+  .contato {
+    padding: 6.4rem 47.7rem;
+  }
+
+  .contato__textos {
+    margin-right: 2rem;
+  }
+}
